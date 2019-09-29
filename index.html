@@ -10,10 +10,10 @@
     </head>
     <body>
         <nav id="navbar">
-            <a href="">About Us</a>
-            <a href="">Our Products</a>
-            <a href="">Special Events</a>
-            <a href="">Get in Touch</a>
+            <a href="#aboutUs">About Us</a>
+            <a href="#products">Our Products</a>
+            <a href="#specialEvents">Special Events</a>
+            <a href="#getInTouch">Get in Touch</a>
         </nav>
 
         <header>
@@ -31,7 +31,7 @@
             </p>
         </section>
 
-        <section>
+        <section id="products">
             <h3>Our Products</h3>
             <p> In hac habitasse platea dictumst. Praesent pellentesque neque nulla. 
             Nunc pretium nisl tempus, tincidunt mauris nec, lobortis mauris. 
@@ -44,32 +44,34 @@
 
         <section>
             <title>Learn about our <a href="">Mission</a></title>
-            <ul class="products">
-                <li class="products">
+            <div id="product">
+                <article class="products">
                     <span>Product 1<br></span>
                     <img src="./Images/cringeman.jpg"/>
-                </li>
-                <li class="products">
+                </article>
+                <article class="products">
                     <span>Product 2<br></span>
                     <img src="./Images/cringeman2.jpg"/>
-                </li>
-                <li class="products">
+                </article>
+                <article class="products">
                     <span>Product 3<br></span>
                     <img src="./Images/cringeman3.jpg"/>
-                </li>
-            </ul>
+                </article>
+            </div>
         </section>
 
-        <section>
+        <section id="specialEvents">
             <h3>Special Events</h3>
             <p>We regularly host socials and meetups to sharpen talent and foster connections. Join us!</p>
         </section>
 
-        <h3>Get in Touch</h3>
-        <p>We would be happy to discuss how our team can meet your needs!</p>
-        <ul id="contact">
-            <li>Email: sales@codebusiness.com</li>
-            <li>Phone: (555) 555-5555</li>
-        </ul>
+        <section id="getInTouch">
+            <h3>Get in Touch</h3>
+            <p>We would be happy to discuss how our team can meet your needs!</p>
+            <ul id="contact">
+                <li>Email: sales@codebusiness.com</li>
+                <li>Phone: (555) 555-5555</li>
+            </ul>
+        </section>
     </body>
 </html>
