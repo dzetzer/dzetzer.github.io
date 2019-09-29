@@ -54,7 +54,6 @@ p {
 #product article{
     background: #333333;
     padding: 1rem;
-    
 }
 #contact{
     margin-left: 12rem;
@@ -62,4 +61,11 @@ p {
 img{
     width: 20rem;
     height:30rem;
+}
+footer{
+    margin-top: 2rem;
+    display: grid;
+    padding: 1rem 5rem;
+    justify-content: center;
+    background-color: #333333;
 }
