@@ -1,6 +1,9 @@
 *{
     padding:0;
-    margin:0;
+    margin:0rem;
+}
+section{
+    margin: 0rem 12rem;
 }
 #navbar{
     list-style-type: none;
@@ -11,7 +14,6 @@
     width: 100%;
     background-color: grey;
     position: fixed;
-
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -27,40 +29,44 @@
 #navbar a:hover{
     background-color:aqua;
 }
-h1 {
-    padding-top: 5rem;
-    font-size: 5rem;
-    margin-left: 12rem;
-    margin-right: 12rem;
+header{
+    padding: 1rem;
+    margin: 0rem 10rem;
+    display: block;
+    background-color: cornflowerblue;
 }
-h2{
-    margin-left: 12rem;
-    margin-right: 12rem;
-}
+h1, h2{margin-left: 2rem;}
+h1 {font-size: 5rem; padding-top: 10%;}
 h3{
-    margin-left: 12rem;
-    margin-right: 12rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
-p {
-    margin: 2rem;
-    margin-left: 12rem;
-    margin-right: 12rem;
+p{
+    margin-bottom: 0.5rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin: 0.5rem 2rem;
 }
 #product {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+    justify-content: center;
 }
 #product article{
     background: #333333;
     padding: 1rem;
 }
-#contact{
-    margin-left: 12rem;
-}
 img{
     width: 20rem;
-    height:30rem;
+    height:20rem;
 }
 footer{
     margin-top: 2rem;
