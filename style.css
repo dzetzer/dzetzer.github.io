@@ -1,22 +1,9 @@
-*
-{
+body{
     background-color: seagreen;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
-}
-header
-{
-    background: lightblue;
-    margin: 1rem;
-    border-style: ridge;
-    border-radius: 1rem;
-}
-header h1, header span
-{
-    padding: 1rem;
-    padding-left: 2rem;
-    display: flex;
-    justify-content: left;
 }
 header h1
 {
@@ -24,26 +11,27 @@ header h1
 }
 #body
 {
-    padding: 10%;;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 #links
 {
+    background: lightblue;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
     margin: auto;
 }
 #links article
 {
-    margin: auto;
+    flex: 1;
+    margin: 0.5rem;
     display: flex;
     justify-content: center;
 
-    width: 25%;
+    width: auto;
     background-color: lightslategray;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 1rem;
 }
 h2
@@ -56,25 +44,29 @@ h2
     width: 100%;
     margin: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
     
 }
 #stack article
 {
-    max-width: 15%;
+    max-width: auto;
     display: flex;
     justify-content: center;
     flex: 1;
 
     background-color: lightslategray;
     padding: 1rem;
-    margin-right: 1rem;
-    margin-top: 1rem;
-    border-radius: 1rem;
+    border: 1px solid white;
 }
 footer
 {
     display: flex;
     justify-content: center;
+}
+
+@media(min-width: 700px){
+    #links, #stack{
+        flex-direction: row;
+    }
 }
