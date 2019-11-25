@@ -1,26 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    background-color: white;
+    background-color: #2E4B64;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
-    padding-top: 1rem;
 }
 header{
-    
+    background-color: #E2E2DC;
+}
+/* #header-image{
+    background-image: url('./Images/down-angle-photography-of-red-clouds-and-blue-sky-844297.jpg');
+    height: 12rem;
 }
 .bg-image{
+    margin: 0;
     position: absolute;
-    background-color: white;
-    background-image: url('./Images/down-angle-photography-of-red-clouds-and-blue-sky-844297.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    height: 12rem;
     opacity: 0.7;
     z-index: -1;
-}
+} */
 h1
 {
     font-size: 4rem;
@@ -51,6 +56,10 @@ h1
 #resume{
     background-color: white;
 }
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+}
 /* Qualifications */
 h2{
     padding: 1rem;
@@ -59,37 +68,29 @@ h2{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width:100%;
+    width:auto;
     height: 4rem;
-}
-#header-tech{
-    background-image: url('./Images/photo-of-green-circuit-board-1105379.jpg');
-}
-#header-qual{
-    background-image: url('./Images/schedule-planning-startup-launching-7376.jpg');
+    background-color: #B43E57;
 }
 #stack
 {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 100%;
 }
 #stack article
 {
-    margin: 0rem 1rem;
-    max-width: auto;
-    display: flex;
-    justify-content: center;
-    flex: 1;
-
-    background-color: lightslategray;
+    width: auto;
+    background-color: #74BCC2;
     padding: 1rem;
     border: 1px solid white;
 }
+#stack article:nth-child(odd){
+    background-color: #3D789B;
+}
 footer
 {
-    background-color: white;
+    background-color: #DD9F37;
     display: flex;
     justify-content: center;
 }
@@ -97,9 +98,13 @@ footer
 /* Desktop */
 @media(min-width: 700px){
     #links, #stack{
-        flex-direction: row;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     #stack article{
-        margin: 0rem;
+        margin: 0;
+        background-color: #74BCC2;
+    }
+    header{
+        text-align: left;
     }
 }
