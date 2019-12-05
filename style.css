@@ -1,16 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 body{
-    background-color: #2E4B64;
+    width: 100%;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
 }
 header{
-    background-color: #E2E2DC;
+    z-index: -1;
+    padding-bottom: 1rem;
 }
 /* #header-image{
     background-image: url('./Images/down-angle-photography-of-red-clouds-and-blue-sky-844297.jpg');
@@ -97,7 +100,10 @@ footer
 
 /* Desktop */
 @media(min-width: 700px){
-    #links, #stack{
+    #links{
+        flex-direction: row;
+    }
+    #stack{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     #stack article{
@@ -106,5 +112,36 @@ footer
     }
     header{
         text-align: left;
+        margin-left: 2rem;
+    }
+    #box-1{
+        position: absolute;
+        bottom: 85%;
+        left: 70%;
+        width: 5rem;
+        height: 5rem;
+        z-index: -1;
+        background-color: #42B7DE;
+        transform: rotate(45deg);
+    }
+    #box-2{
+        position: absolute;
+        bottom: 65%;
+        left: 50%;
+        width: 10rem;
+        height: 15rem;
+        z-index: -1;
+        background-color: #9B7BBF;
+        transform: rotate(45deg);
+    }
+    #box-3{
+        position: absolute;
+        bottom: 70%;
+        left: 55%;
+        width: 10rem;
+        height: 10rem;
+        z-index: -1;
+        background-color: #2AD985;
+        transform: rotate(45deg);
     }
 }
